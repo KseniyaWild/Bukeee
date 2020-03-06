@@ -5,3 +5,191 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+
+$white: #fff;
+$accent-color: #65e496;
+
+/*Specification*/
+
+body {
+    font-family: 'Roboto Slab', serif;
+    padding: 0;
+	margin: 0;
+}
+
+header, div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+{
+	outline: none;
+}
+
+img{
+	width: 100%;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.btn {
+    font-size: 18px;
+    width: 250px;
+    display: block;
+    background: $accent-color;
+    color: $white;
+    border-radius: 3px;
+    text-align: center;
+    padding: 14px 0;
+    letter-spacing: 0.7px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*--------------------Header------------------*/
+
+.header {
+    background: rgba(69,112,137,1);
+    background: -moz-linear-gradient(-45deg, rgba(69,112,137,1) 0%, rgba(81,170,157,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(69,112,137,1)), color-stop(100%, rgba(81,170,157,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(69,112,137,1) 0%, rgba(81,170,157,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(69,112,137,1) 0%, rgba(81,170,157,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(69,112,137,1) 0%, rgba(81,170,157,1) 100%);
+    background: linear-gradient(135deg, rgba(69,112,137,1) 0%, rgba(81,170,157,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#457089', endColorstr='#51aa9d', GradientType=1 );
+    color: $white;
+    padding: 50px 0 162px;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin-bottom: 166px;
+	&__logo {
+		background-image: url(../img/logo.svg);
+		width: 137px;
+		height: 28px;
+		display: block;
+	}
+}
+
+.menu {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+	&__item {
+        margin-left: 22px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s;
+        &:hover {
+            border-bottom: 3px solid $accent-color;
+        }
+	}
+	&__item.active {
+		border-bottom: 3px solid $accent-color;
+	}
+	&__link {
+        color: $white;
+        letter-spacing: 0.5px;
+	}
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    &__book-img {
+        background: url(../img/book.svg) no-repeat;
+        width: 447px;
+        height: 643px;
+        display: block;
+        flex-basis: 500px;
+    }
+}
+
+.block-text {
+    margin-left: 55px;
+    &__name {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        font-size: 18px;
+        display: block;
+        color: $accent-color;
+        text-transform: none;
+        margin-top: 9px;
+        letter-spacing: 0.9px;
+    }
+    &__text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        letter-spacing: 0.7px;
+    }
+    &__btn {
+        margin: 48px 0 19px;
+    }
+    small {
+        font-size: 12px;
+        font-style: italic;
+    }
+}
