@@ -67,9 +67,9 @@ button, button:hover, button:focus, button:active
 }
 
 img{
-	width: 100%;
+	// width: 100%;
 	display: block;
-	max-width: 100%;
+	// max-width: 100%;
 	height: auto;
 }
 
@@ -88,6 +88,7 @@ img{
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0;
 }
 
 /*--------------------Header------------------*/
@@ -146,6 +147,7 @@ img{
 }
 
 .block {
+    margin-right: 55px;
     &__book-img {
         background: url(../img/book.svg) no-repeat;
         width: 447px;
@@ -156,12 +158,15 @@ img{
 }
 
 .block-text {
-    margin-left: 55px;
     &__name {
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
         letter-spacing: 0.7px;
         margin-bottom: 30px;
+    }
+    &__explanation {
+        margin-top: 16px;
+        margin-left: 0;
     }
     &__title {
         font-size: 48px;
@@ -183,7 +188,7 @@ img{
         font-size: 15px;
         line-height: 24px;
         margin-bottom: 24px;
-        letter-spacing: 0.7px;
+        letter-spacing: 0.75px;
     }
     &__btn {
         margin: 48px 0 19px;
@@ -191,5 +196,32 @@ img{
     small {
         font-size: 12px;
         font-style: italic;
+    }
+}
+
+.author {
+    padding: 161px 0;
+    .about {
+        display: flex;
+        justify-content: space-between;
+        .block-avatar {
+            margin-left: 55px;
+            position: relative;
+            &__svg {
+                position: absolute;
+                z-index: -1;
+                right: 0;
+            }
+            &__img {
+                margin-top: 45px;
+                margin-right: 46px;
+            }
+        }
+    }
+}
+
+.points {
+    li {
+        display: list-item ;
     }
 }
