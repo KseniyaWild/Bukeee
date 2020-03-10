@@ -218,6 +218,24 @@ img{
             }
         }
     }
+    .statistics {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 175px;
+        &__item {
+            text-align: center;
+        }
+        span {
+            font-size: 80px;
+            font-weight: 100;
+            color: $accent-color;
+        }
+        p {
+            font-family: 'Myriad Pro 400', sans-serif;
+            font-size: 18px;
+            margin-top: 12px;
+        }
+    }
 }
 
 .points {
