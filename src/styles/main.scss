@@ -9,11 +9,16 @@
 
 $white: #fff;
 $accent-color: #65e496;
+$gray: #f5f6fa;
+$dark: #44444f;
+$text-color: #696980;
 
 /*Specification*/
 
 body {
     font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    line-height: 24px;
     padding: 0;
 	margin: 0;
 }
@@ -29,14 +34,22 @@ ul, li {
 }
 
 h1 {
+    text-transform: uppercase;
     margin: 0;
 }
 
 h2 {
+    color: $dark;
+    text-align: center;
     margin: 0;
+    letter-spacing: 2px
 }
 
 h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $dark;
+    letter-spacing: 1.2px;
     margin: 0;
 }
 
@@ -83,6 +96,21 @@ img{
     text-align: center;
     padding: 14px 0;
     letter-spacing: 0.7px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 0.9px;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: $text-color;
+    line-height: 24px;
+    margin-bottom: 24px;
+    letter-spacing: 0.75px;
 }
 
 .container {
@@ -165,30 +193,25 @@ img{
         margin-bottom: 30px;
     }
     &__explanation {
-        margin-top: 16px;
-        margin-left: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        color: #696980;
     }
     &__title {
         font-size: 48px;
         font-weight: 700;
-        text-transform: uppercase;
         letter-spacing: 1.8px;
-        margin-bottom: 40px;
+        margin: 30px 0 40px;
     }
     &__subtitle {
-        font-size: 18px;
         display: block;
         color: $accent-color;
         text-transform: none;
-        margin-top: 9px;
         letter-spacing: 0.9px;
     }
-    &__text {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 24px;
-        letter-spacing: 0.75px;
+    .offer &__text {
+        color: $white;
     }
     &__btn {
         margin: 48px 0 19px;
@@ -199,11 +222,19 @@ img{
     }
 }
 
+/*--------------------Section Author------------------*/
+
 .author {
+    color: #696980;
     padding: 161px 0;
     .about {
         display: flex;
         justify-content: space-between;
+        .block-text {
+            &__title {
+                text-align: left;
+            }
+        }
         .block-avatar {
             margin-left: 55px;
             position: relative;
@@ -241,5 +272,98 @@ img{
 .points {
     li {
         display: list-item ;
+    }
+}
+
+/*--------------------Section Content------------------*/
+
+.content {
+    background: $gray;
+    padding: 150px 0 258px;
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 86px;
+    }
+    &__subtitle {
+        color: $accent-color;
+        display: block;
+    }
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        margin-bottom: 26px;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.6px;
+    }
+    .description {
+        flex-basis: 41%;
+        &__text {
+            width: 468px;
+        }
+        &__find {
+            display: flex;
+        }
+        &__social {
+            font-size: 18px;
+            font-weight: 700;
+            color: $dark;
+        }
+        &__block {
+            margin-left: 8px;
+        }
+        &__link i {
+            color: $accent-color;
+            margin-left: 16px;
+        }
+    }
+    .points {
+        flex-basis: 49%;
+        &__list {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            color: $text-color;
+            margin: 25px 0 0 0;
+            padding: 0;
+            counter-reset: list;
+            column-count: 2;
+            &>li {
+                position: relative;
+                padding-left: 36px;
+                counter-increment: list;
+                list-style-type: none;
+                margin-bottom: 8px;
+                letter-spacing: 0.6px;
+                &::before {
+                    content: counter(list) ". ";
+                }
+                &::after {
+                    content: '+';
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 15px;
+                    line-height: 22px;
+                    position: absolute;
+                    left: 0;
+                    top: 1px;
+                    color: #fff;
+                    background: #5fc9b7;
+                    width: 22px;
+                    height: 22px;
+                    padding: 0 3px;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+        &__btn {
+            width: 135px;
+            border: none;
+            margin-top: 28px;
+        }
     }
 }

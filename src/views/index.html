@@ -7,6 +7,9 @@
         <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+        <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
         <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
         <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
@@ -23,7 +26,9 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <!-- Open Sans Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
+        <!-- Main CSS -->
         <link rel="stylesheet" href="../styles/main.css">
     </head>
     <body>
@@ -92,12 +97,12 @@
                         </p>
                         <h1 class="block-text__title">
                             Bukee: the book
-                            <span class="block-text__subtitle">A room without books is like a body without a soul</span>
+                            <span class="block-text__subtitle subtitle">A room without books is like a body without a soul</span>
                         </h1>
-                        <p class="block-text__text">
+                        <p class="block-text__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         </p>
-                        <p class="block-text__text">
+                        <p class="block-text__text text">
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
                         </p>
                         <a href="#" class="block-text__btn btn">
@@ -115,14 +120,14 @@
                         <span class="block-text__explanation">- Book Author</span>
                         <h2 class="block-text__title">
                             Emma Anderson
-                            <span class="block-text__subtitle">
+                            <span class="block-text__subtitle subtitle">
                                 A room without books is like a body without a soul
                             </span>
                         </h2>
-                        <p class="block-text__text">
+                        <p class="block-text__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
-                        <p class="block-text__text">
+                        <p class="block-text__text text">
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
                         </p>
                         <a href="#" class="block-text__btn btn">
@@ -172,7 +177,7 @@
             <div class="container">
                 <h2 class="content__title">
                     Book Contents
-                    <span class="content__subtitle">
+                    <span class="content__subtitle subtitle">
                         Let’s see what we have covered in the book
                     </span>
                 </h2>
@@ -181,41 +186,46 @@
                         <h3 class="description__title">
                             About the book
                         </h3>
-                        <p class="description__text">
+                        <p class="description__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur. 
                         </p>
                         <div class="description__find">
-                            <span>
+                            <span class="description__social">
                                 Featured in:
                             </span>
-                            <a description__link href="#"></a>
-                            <a description__link href="#"></a>
-                            <a description__link href="#"></a>
+                            <div class="description__block">
+                                <a class="description__link" href="#"><i class="fab fa-stack-overflow"></i></a>
+                                <a class="description__link" href="#"><i class="fab fa-amazon"></i></a>
+                                <a class="description__link" href="#"><i class="fab fa-sass"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="points">
-                    <h3 class="points__title">
-                        Table of contents
-                    </h3>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipisicing elit</li>
-                        <li>Labore et dolore magna</li>
-                        <li>Consectetur adipisicing elit</li>
-                        <li>Labore et dolore magna</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipisicing elit</li>
-                        <li>Labore et dolore magna</li>
-                        <li>Consectetur adipisicing elit</li>
-                        <li>Labore et dolore magna</li>
-                    </ol>
-                    <button class="points__btn btn">
-                        More
-                    </button>
+                    <div class="points">
+                        <h3 class="points__title">
+                            Table of contents
+                        </h3>
+                        <ol class="points__list">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipisicing elit</li>
+                            <li>Labore et dolore magna</li>
+                            <li>Consectetur adipisicing elit</li>
+                            <li>Labore et dolore magna</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipisicing elit</li>
+                            <li>Labore et dolore magna</li>
+                            <li>Consectetur adipisicing elit</li>
+                            <li>Labore et dolore magna</li>
+                        </ol>
+                        <button class="points__btn btn">
+                            More
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.9305226517554!2d37.53360655915473!3d55.746691796885955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bddfd860aed%3A0xd4fb8d6c45f9b41b!2z0JTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1583856697819!5m2!1sru!2sru" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A654f450d13d9fd6cc522518e5e6de7a9dcbbdfa590c00c2d8c2eadd5b92cb622&amp;source=constructor" width="100%" height="437" frameborder="0"></iframe>
         @@include("../blocks/modules/header/header.html")
         @@include("../blocks/modules/footer/footer.html")
         <script src="js/main.js"></script>
