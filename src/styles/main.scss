@@ -313,13 +313,16 @@ img{
             font-size: 18px;
             font-weight: 700;
             color: $dark;
+            letter-spacing: 0.9px;
         }
         &__block {
             margin-left: 8px;
         }
         &__link i {
+            font-size: 18px;
             color: $accent-color;
             margin-left: 16px;
+            vertical-align: middle;
         }
     }
     .points {
