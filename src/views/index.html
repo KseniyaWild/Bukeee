@@ -36,7 +36,7 @@
         <header class="header" id="header">
             <div class="container">
                 <div class="nav">
-                        <a class="nav__logo" href=""></a>
+                    <a class="nav__logo" href=""></a>
                     <nav>
                         <ul class="menu">
                             <li class="menu__item active">
@@ -89,7 +89,15 @@
                 </div>
                 <div class="offer">
                     <div class="block">
-                        <div class="block__book-img"></div>
+                        <div class="block__book-img">
+                            <h3 class="block__title">
+                                Good book
+                                <span class="block__subtitle subtitle">Don’t judge a book by its cover</span>
+                            </h3>
+                            <p class="block__author">
+                                - By Emma Anderson
+                            </p>
+                        </div>
                     </div>
                     <div class="block-text">
                         <p class="block-text__name">
@@ -183,9 +191,9 @@
                 </h2>
                 <div class="book">
                     <div class="description">
-                        <h3 class="description__title">
+                        <h4 class="description__title">
                             About the book
-                        </h3>
+                        </h4>
                         <p class="description__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur. 
                         </p>
@@ -201,9 +209,9 @@
                         </div>
                     </div>
                     <div class="points">
-                        <h3 class="points__title">
+                        <h4 class="points__title">
                             Table of contents
-                        </h3>
+                        </h4>
                         <ol class="points__list">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipisicing elit</li>
@@ -223,9 +231,81 @@
                 </div>
             </div>
         </section>
-        <!-- Maps -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.9305226517554!2d37.53360655915473!3d55.746691796885955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bddfd860aed%3A0xd4fb8d6c45f9b41b!2z0JTQtdC70L7QstC-0Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1583856697819!5m2!1sru!2sru" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A654f450d13d9fd6cc522518e5e6de7a9dcbbdfa590c00c2d8c2eadd5b92cb622&amp;source=constructor" width="100%" height="437" frameborder="0"></iframe>
+        <section class="collection" id="collection">
+            <div class="container">
+                <h2 class="collection__title">
+                    Other Books
+                    <span class="collection__subtitle subtitle">
+                        Some books you might be interested in
+                    </span>
+                </h2>
+                <div class="other">
+                    <div class="other__item">
+                        <div class="other__img">
+                            <h4 class="other__title">
+                                Inception
+                                <span class="other__subtitle subtitle">Books are the best friends</span>
+                            </h4>
+                            <p class="other__author">
+                                - By Emma Anderson
+                            </p>
+                        </div>
+                        <h4 class="other__name">
+                            Inception
+                        </h4>
+                        <p class="other__description text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  
+                        </p>
+                        <a href="#" class="other__link">
+                            Read more
+                        </a>
+                    </div>
+                    <div class="other__item">
+                        <div class="other__img">
+                            <h4 class="other__title">
+                                Fight Club
+                                <span class="other__subtitle subtitle">Books are the best friends</span>
+                            </h4>
+                            <p class="other__author">
+                                - By Emma Anderson
+                            </p>
+                        </div>
+                        <h4 class="other__name">
+                            Fight Club
+                        </h4>
+                        <p class="other__description text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  
+                        </p>
+                        <a href="#" class="other__link">
+                            Read more
+                        </a>
+                    </div>
+                    <div class="other__item">
+                        <div class="other__img">
+                            <h4 class="other__title">
+                                Daredevils
+                                <span class="other__subtitle subtitle">Books are the best friends</span>
+                            </h4>
+                            <p class="other__author">
+                                - By Emma Anderson
+                            </p>
+                        </div>
+                        <h4 class="other__name">
+                            Daredevils
+                        </h4>
+                        <p class="other__description text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        </p>
+                        <a href="#" class="other__link">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+                <a href="" class="collection__btn btn">
+                    Browse all books
+                </a>
+            </div>
+        </section>
         @@include("../blocks/modules/header/header.html")
         @@include("../blocks/modules/footer/footer.html")
         <script src="js/main.js"></script>

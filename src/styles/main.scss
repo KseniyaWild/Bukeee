@@ -34,11 +34,15 @@ ul, li {
 }
 
 h1 {
+    font-size: 48px;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 0;
 }
 
 h2 {
+    font-size: 48px;
+    font-weight: 700;
     color: $dark;
     text-align: center;
     margin: 0;
@@ -46,14 +50,15 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: $dark;
-    letter-spacing: 1.2px;
+    text-transform: uppercase;
     margin: 0;
 }
 
 h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $dark;
+    letter-spacing: 1.2px;
     margin: 0;
 }
 
@@ -100,8 +105,12 @@ img{
 
 .subtitle {
     font-size: 18px;
+    font-weight: 400;
     margin-top: 20px;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.8px;
+    text-transform: none;
+    display: block;
+    color: $accent-color;
 }
 
 .text {
@@ -110,7 +119,7 @@ img{
     color: $text-color;
     line-height: 24px;
     margin-bottom: 24px;
-    letter-spacing: 0.75px;
+    letter-spacing: 0.79px;
 }
 
 .container {
@@ -180,8 +189,37 @@ img{
         background: url(../img/book.svg) no-repeat;
         width: 447px;
         height: 643px;
+        position: relative;
         display: block;
         flex-basis: 500px;
+        border-radius: 5px;
+    }
+    &__title {
+        font-size: 36px;
+        position: absolute;
+        left: 132px;
+        top: 118px;
+        letter-spacing: 0.9px;
+        span {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: $accent-color;
+            display: block;
+        }
+    }
+    &__subtitle {
+        margin-top: 11px;
+        letter-spacing: 0.6px;
+    }
+    &__author {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        position: absolute;
+        color: $accent-color;
+        bottom: 56px;
+        left: 88px;
+        letter-spacing: 0.7px;
     }
 }
 
@@ -189,8 +227,8 @@ img{
     &__name {
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
-        letter-spacing: 0.7px;
-        margin-bottom: 30px;
+        letter-spacing: 0.9px;
+        margin-bottom: 44px;
     }
     &__explanation {
         font-family: 'Open Sans', sans-serif;
@@ -199,16 +237,8 @@ img{
         color: #696980;
     }
     &__title {
-        font-size: 48px;
-        font-weight: 700;
-        letter-spacing: 1.8px;
+        letter-spacing: 1.6px;
         margin: 30px 0 40px;
-    }
-    &__subtitle {
-        display: block;
-        color: $accent-color;
-        text-transform: none;
-        letter-spacing: 0.9px;
     }
     .offer &__text {
         color: $white;
@@ -281,8 +311,6 @@ img{
     background: $gray;
     padding: 150px 0 258px;
     &__title {
-        font-size: 48px;
-        font-weight: 700;
         margin-bottom: 86px;
     }
     &__subtitle {
@@ -294,7 +322,7 @@ img{
 .book {
     display: flex;
     justify-content: space-between;
-    h3 {
+    h4 {
         margin-bottom: 26px;
     }
     p {
@@ -368,5 +396,65 @@ img{
             border: none;
             margin-top: 28px;
         }
+    }
+}
+
+/*--------------------Section Collection------------------*/
+
+.collection {
+    padding: 160px 0;
+    .other {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 84px;
+        &__item {
+            flex-basis: 32%;
+        }
+        &__img {
+            background: url(../img/book-mini.svg) no-repeat;
+            width: 268px;
+            height: 410px;
+            border-radius: 5px;
+            position: relative;
+            margin: 0 auto 35px;
+        }
+        &__title {
+            color: $white;
+            text-transform: uppercase;
+            position: absolute;
+            top: 71px;
+            left: 69px;
+            letter-spacing: 0.8px;
+        }
+        &__subtitle {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.6px;
+            margin-top: 7px;
+        }
+        &__author {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.6px;
+            color: $accent-color;
+            position: absolute;
+            bottom: 28px;
+            left: 80px;
+        }
+        &__description {
+            margin: 15px 0 25px;
+        }
+        &__link {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $accent-color;
+        }
+    }
+    &__btn {
+        width: 220px;
+        margin: 87px auto 0;
     }
 }
