@@ -92,15 +92,17 @@ img{
 }
 
 .btn {
+    background: linear-gradient(to top left, #65e49b, #65e4b0);
     font-size: 18px;
     width: 250px;
     display: block;
-    background: $accent-color;
     color: $white;
     border-radius: 3px;
     text-align: center;
     padding: 14px 0;
     letter-spacing: 0.7px;
+    border: none;
+    box-shadow: 0 2px 0 0 #b2f1be;
 }
 
 .subtitle {
@@ -244,11 +246,16 @@ img{
         color: $white;
     }
     &__btn {
-        margin: 48px 0 19px;
+        margin: 48px 0 0;
+    }
+    &__btn_main {
+        box-shadow: 0 2px 0 0 #59bc89; 
     }
     small {
         font-size: 12px;
         font-style: italic;
+        display: block;
+        margin-top: 19px;
     }
 }
 
@@ -393,7 +400,6 @@ img{
         }
         &__btn {
             width: 135px;
-            border: none;
             margin-top: 28px;
         }
     }
