@@ -63,6 +63,8 @@ h4 {
 }
 
 h5 {
+    font-size: 18px;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -268,21 +270,69 @@ img{
         display: flex;
         justify-content: space-between;
         .block-text {
+            margin-right: 55px;
             &__title {
                 text-align: left;
             }
+            &__item_second {
+                margin-top: 54px;
+            }
+            &__title_last {
+                margin: 30px 0 33px;
+            }
+            h5 {
+                margin: 4px 0 16px;
+                letter-spacing: 0.7px;
+            }
+            &__date {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 15px;
+                color: $text-color;
+                letter-spacing: 0.5px;
+            }
+            &__description {
+                width: 564px;
+            }
+            &__btn_register {
+                width: 137px;
+                margin: 0;
+            }
+            &__subtitle_last {
+                line-height: 2;
+                letter-spacing: 1px;
+            }
+        }
+        .block-text-right {
+            margin-right: 0;
+            margin-left: 109px;
         }
         .block-avatar {
-            margin-left: 55px;
             position: relative;
             &__svg {
                 position: absolute;
                 z-index: -1;
                 right: 0;
             }
+            &__svg_left {
+                background: rgba(77,147,153,1);
+                background: -moz-linear-gradient(-45deg, rgba(77,147,153,1) 0%, rgba(71,120,141,1) 100%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(77,147,153,1)), color-stop(100%, rgba(71,120,141,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(77,147,153,1) 0%, rgba(71,120,141,1) 100%);
+                background: -o-linear-gradient(-45deg, rgba(77,147,153,1) 0%, rgba(71,120,141,1) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(77,147,153,1) 0%, rgba(71,120,141,1) 100%);
+                background: linear-gradient(135deg, rgba(77,147,153,1) 0%, rgba(71,120,141,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d9399', endColorstr='#47788d', GradientType=1 );
+                right: inherit;
+                left: 0;
+            }
             &__img {
                 margin-top: 45px;
                 margin-right: 46px;
+            }
+            &__img_left {
+                margin-top: 49px;
+                margin-left: 51px;
+                margin-right: 0;
             }
         }
     }
@@ -464,3 +514,5 @@ img{
         margin: 87px auto 0;
     }
 }
+
+/*--------------------Section Future------------------*/
