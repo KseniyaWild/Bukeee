@@ -65,6 +65,7 @@ h4 {
 h5 {
     font-size: 18px;
     font-weight: 700;
+    color: $text-color;
     margin: 0;
 }
 
@@ -88,9 +89,9 @@ button, button:hover, button:focus, button:active
 
 img{
 	// width: 100%;
-	display: block;
+	// display: block;
 	// max-width: 100%;
-	height: auto;
+	// height: auto;
 }
 
 .btn {
@@ -516,3 +517,59 @@ img{
 }
 
 /*--------------------Section Future------------------*/
+
+/*--------------------Section Blog------------------*/
+
+.blog {
+    background: #f5f6fa;
+    padding: 150px 0 160px;
+    &__title {
+        margin-bottom: 88px;
+    }
+    .articles {
+        display: flex;
+        justify-content: space-between;
+        &__item_center {
+            margin: 0 30px;
+        }
+        &__title {
+            color: $dark;
+            margin-top: 17px;
+            letter-spacing: 0.9px;
+        }
+        &__photo {
+                width: 369px;
+                height: 224px;
+                overflow: hidden;
+                position: relative;
+            img {
+                width: 369px;
+                height: 224px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+                // display: block;
+                // width: 100%;
+                // max-width: 100%;
+                // height: auto;
+            }
+        }
+        &__link {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 15px;
+                color: #80809b;
+                margin: 2px 0 12px;
+                letter-spacing: 0.7px;
+                a {
+                    color: $accent-color;
+                }
+        }
+    }
+    &__btn {
+        margin: 60px auto 0;
+    }
+}
+
+
