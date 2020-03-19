@@ -12,6 +12,7 @@ $accent-color: #65e496;
 $gray: #f5f6fa;
 $dark: #44444f;
 $text-color: #696980;
+$gray-color: #9191b5;
 
 /*Specification*/
 
@@ -125,12 +126,6 @@ img{
     line-height: 24px;
     margin-bottom: 24px;
     letter-spacing: 0.79px;
-}
-
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0;
 }
 
 /*--------------------Header------------------*/
@@ -302,10 +297,6 @@ img{
                 line-height: 2;
                 letter-spacing: 1px;
             }
-        }
-        .block-text-right {
-            margin-right: 0;
-            margin-left: 109px;
         }
         .block-avatar {
             position: relative;
@@ -527,9 +518,11 @@ img{
         margin-bottom: 88px;
     }
     .articles {
-        width: 1170px;
         display: flex;
         justify-content: space-between;
+        &__item {
+            flex-basis: 33%;
+        }
         &__title {
             color: $dark;
             margin-top: 17px;
@@ -570,4 +563,77 @@ img{
     }
 }
 
+/*--------------------Section Blog------------------*/
+
+.newsletter {
+    padding: 159px 0;
+    .mailing {
+        display: flex;
+        justify-content: space-between;
+        &__block {
+            flex-basis: 47%;
+        }
+        &__title {
+            text-align: initial;
+            margin-bottom: 25px;
+            letter-spacing: 1.59px;
+        }
+        &__text {
+            margin-bottom: 0;
+        }
+        &__input {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            background: $dark;
+            width: 100%;
+            color: $gray-color;
+            border: 0;
+            padding: 16px 0 17px 28px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            letter-spacing: 0.6px;
+            &::-webkit-input-placeholder {
+                color: $gray-color;
+              }
+              &::-moz-placeholder {
+                color: $gray-color;
+              }
+              &::-moz-placeholder {
+                color: $gray-color;
+              }
+              &::-ms-input-placeholder {
+                color: $gray-color;
+              }
+               
+              &:focus::-webkit-input-placeholder {
+                color: $gray-color;
+              }
+              &:focus:-moz-placeholder {
+                color: $gray-color;
+              }
+              &:focus::-moz-placeholder {
+                color: $gray-color;
+              }
+              &:focus:-ms-input-placeholder {
+                color: $gray-color;
+              }
+               
+              &:hover::-webkit-input-placeholder {
+                color: $gray-color;
+              }
+              &:hover:-moz-placeholder {
+                color: $gray-color;
+              }
+              &:hover::-moz-placeholder {
+                color: $gray-color;
+              }
+              &:hover:-ms-input-placeholder {
+                color: $gray-color;
+              }
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}
 
